@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: content-box;
+  }
+  
+  body {
+    background-color: rgb(19, 19, 53);
+    color: white;
+  }
+
+  .header a {
+    border:0;
+    outline: none;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: inline-block;
+    margin-top: 10px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header-right {
+    float: right;
+}
+
+.header a:hover {
+    color: rgb(185, 185, 185);
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+  
+  .app {
+    position: absolute;
+    display: flex;
+    left: 10%;
+    top: 25%;
+    width: 80%;
+    background-color: rgb(1, 1, 51);
+    border-radius: 10px;
+  
+    .pointer {
+      position: relative;
+      z-index: 1;
+      left: 50%;
+      transform: translate3d(-50%, -25px, 0);
+      height: 50px;
+      filter: drop-shadow(0 0 20px rgba(174, 156, 255, 0.2));
+    }
+  
+    .scope {
+      overflow: hidden;
+  
+      .list {
+        position: relative;
+        display: inline-flex;
+        left: 0;
+        transform: translate3d(0, 0, 0);
+        list-style: none;
+        transition: 8s cubic-bezier(.21,.53,.29,.99);
+  
+        &_item {
+          flex-shrink: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          $sizes: 200px;
+          width: $sizes;
+          height: calc($sizes * .8);
+          opacity: .8;
+          transition: .3s ease;
+  
+          &:nth-child(2n) {
+            background-color: rgba(0, 0, 0, 0.1);
+          }
+  
+          &.active {
+            opacity: 1;
+  
+            img {
+              transform: scale(1.1);
+            }
+          }
+          
+          img {
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+            transition: .3s ease;
+          }
+        }
+      }
+    }
+  
+    .start {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate3d(-50%, 20px, 0);
+      padding: 8px 25px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      background: #4651eb;
+      color: inherit;
+      font-size: 16px;
+      font-weight: 500;
+      transition: opacity .2s ease;
+      box-shadow: 0 0 30px 0 rgba(174, 156, 255, 0.2);
+      cursor: pointer;
+  
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+
+  .main_cards_skins {
+    flex-wrap: wrap;
+    display: flex;
+    position: absolute;
+    left: 14%;
+    width: 80%;
+    top: 55%;
+
+    .cards_skins_1, .cards_skins_2 {
+      width: 250px;
+      height: 300px;
+      margin: 10px;
+      padding: 10px;
+      background: #00043b;
+      border-bottom: 0.5rem solid #0008ff;
+
+      .Ak47_Elite, .Deagle_Write {
+        position: relative;
+        left: 13%;
+        width: 70%;
+        height: 50%;
+      }
+
+      .name_skins_1, .name_skins_2 {
+        font-size: 1.3rem;
+      }
+
+      .price_skins_1, .price_skins_2 {
+        position: relative;
+        top: 10%;
+        float: left;
+        padding: 10px 25px;
+        border: 5px solid rgb(23, 23, 114);
+        font-family: "Special Gothic Expanded One", sans-serif;
+      }
+    }
+    .cards_skins_4, .cards_skins_7, .cards_skins_6 {
+      width: 250px;
+      height: 300px;
+      margin: 10px;
+      padding: 10px;
+      background: #00043b;
+      border-bottom: 0.5rem solid #7700ff;
+
+    .AWP_4erb, .Famas_Valents, .cz75 {
+      position: relative;
+      left: 13%;
+      width: 70%;
+      height: 50%;
+    }
+
+      .price_skins_4, .price_skins_7, .price_skins_6 {
+        position: relative;
+        top: 10%;
+        float: left;
+        padding: 10px 25px;
+        border: 5px solid rgb(23, 23, 114);
+        font-family: "Special Gothic Expanded One", sans-serif;
+      }
+
+      .name_skins_4, .name_skins_7, .name_skins_6{
+        font-size: 1.3rem;
+      }
+    }
+    .cards_skins_5, .cards_skins_3 {
+      width: 250px;
+      height: 300px;
+      margin: 10px;
+      padding: 10px;
+      background: #00043b;
+      border-bottom: 0.5rem solid #00569c;
+
+      .Berets_Arrow, .AUG_Tiffani {
+        position: relative;
+        left: 13%;
+        width: 70%;
+        height: 50%;
+      }
+
+      .name_skins_5, .name_skins_3 {
+        font-size: 1.3rem;
+      }
+
+      .price_skins_5, .price_skins_3 {
+        position: relative;
+        top: 10%;
+        float: left;
+        padding: 10px 25px;
+        border: 5px solid rgb(23, 23, 114);
+        font-family: "Special Gothic Expanded One", sans-serif;
+      }
+    }
+  }

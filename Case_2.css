@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: content-box;
+}
+
+body {
+  background-image: linear-gradient(90deg, rgb(9, 9, 37), rgb(19, 19, 70), rgb(9, 9, 37)) ;
+  color: white;
+}
+
+.header a {
+  border: 0;
+  outline: none;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  display: inline-block;
+  margin-top: 10px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header-right {
+  float: right;
+}
+
+.cap_main {
+  background-color: rgb(8, 8, 49);
+}
+
+.header a:hover {
+  color: rgb(185, 185, 185);
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+.app {
+  position: absolute;
+  display: flex;
+  left: 10%;
+  top: 25%;
+  width: 80%;
+  background-color: rgba(1, 1, 51, 0.452);
+  border-radius: 10px;
+}
+.app .pointer {
+  position: relative;
+  z-index: 1;
+  left: 50%;
+  transform: translate3d(-50%, -25px, 0);
+  height: 50px;
+  filter: drop-shadow(0 0 20px rgba(174, 156, 255, 0.2));
+}
+.app .scope {
+  overflow: hidden;
+}
+.app .scope .list {
+  position: relative;
+  display: inline-flex;
+  left: 0;
+  transform: translate3d(0, 0, 0);
+  list-style: none;
+  transition: 8s cubic-bezier(0.21, 0.53, 0.29, 0.99);
+}
+.app .scope .list_item {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 160px;
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+.app .scope .list_item:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.app .scope .list_item.active {
+  opacity: 1;
+}
+.app .scope .list_item.active img {
+  transform: scale(1.1);
+}
+.app .scope .list_item img {
+  width: 80%;
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 0.3s ease;
+}
+.app .start {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate3d(-50%, 20px, 0);
+  padding: 8px 25px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #4651eb;
+  color: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+  box-shadow: 0 0 30px 0 rgba(174, 156, 255, 0.2);
+  cursor: pointer;
+}
+.app .start:hover {
+  opacity: 0.8;
+}
+
+.main_cards_skins {
+  flex-wrap: wrap;
+  display: flex;
+  position: absolute;
+  left: 14%;
+  width: 80%;
+  top: 55%;
+}
+.main_cards_skins .cards_skins_1, .main_cards_skins .cards_skins_7 {
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  background: #00043b;
+  border-bottom: 0.5rem solid #c40101;
+}
+.main_cards_skins .cards_skins_1 .AK47_Musei, .main_cards_skins .cards_skins_1 .USP-S_Danger, .main_cards_skins .cards_skins_7 .AK47_Musei, .main_cards_skins .cards_skins_7 .USP-S_Danger {
+  position: relative;
+  left: 13%;
+  width: 70%;
+  height: 50%;
+}
+.main_cards_skins .cards_skins_1 .name_skins_1, .main_cards_skins .cards_skins_1 .name_skins_7, .main_cards_skins .cards_skins_7 .name_skins_1, .main_cards_skins .cards_skins_7 .name_skins_7 {
+  font-size: 1.3rem;
+}
+.main_cards_skins .cards_skins_1 .price_skins_1, .main_cards_skins .cards_skins_1 .price_skins_7, .main_cards_skins .cards_skins_7 .price_skins_1, .main_cards_skins .cards_skins_7 .price_skins_7 {
+  position: relative;
+  top: 10%;
+  float: left;
+  padding: 10px 25px;
+  border: 5px solid rgb(23, 23, 114);
+  font-family: "Special Gothic Expanded One", sans-serif;
+}
+.main_cards_skins .cards_skins_2, .main_cards_skins .cards_skins_3, .main_cards_skins .cards_skins_4, .main_cards_skins .cards_skins_5, .main_cards_skins .cards_skins_8 {
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  background: #00043b;
+  border-bottom: 0.5rem solid #b401c4;
+}
+.main_cards_skins .cards_skins_2 .DEAGLE_Kraski, .main_cards_skins .cards_skins_2 .M4A1-s_Xrystal, .main_cards_skins .cards_skins_2 .P250_Asimov, .main_cards_skins .cards_skins_2 .USP-S_Animal, .main_cards_skins .cards_skins_2 .ZEUS_Zeus, .main_cards_skins .cards_skins_3 .DEAGLE_Kraski, .main_cards_skins .cards_skins_3 .M4A1-s_Xrystal, .main_cards_skins .cards_skins_3 .P250_Asimov, .main_cards_skins .cards_skins_3 .USP-S_Animal, .main_cards_skins .cards_skins_3 .ZEUS_Zeus, .main_cards_skins .cards_skins_4 .DEAGLE_Kraski, .main_cards_skins .cards_skins_4 .M4A1-s_Xrystal, .main_cards_skins .cards_skins_4 .P250_Asimov, .main_cards_skins .cards_skins_4 .USP-S_Animal, .main_cards_skins .cards_skins_4 .ZEUS_Zeus, .main_cards_skins .cards_skins_5 .DEAGLE_Kraski, .main_cards_skins .cards_skins_5 .M4A1-s_Xrystal, .main_cards_skins .cards_skins_5 .P250_Asimov, .main_cards_skins .cards_skins_5 .USP-S_Animal, .main_cards_skins .cards_skins_5 .ZEUS_Zeus, .main_cards_skins .cards_skins_8 .DEAGLE_Kraski, .main_cards_skins .cards_skins_8 .M4A1-s_Xrystal, .main_cards_skins .cards_skins_8 .P250_Asimov, .main_cards_skins .cards_skins_8 .USP-S_Animal, .main_cards_skins .cards_skins_8 .ZEUS_Zeus {
+  position: relative;
+  left: 13%;
+  width: 70%;
+  height: 50%;
+}
+.main_cards_skins .cards_skins_2 .name_skins_2, .main_cards_skins .cards_skins_2 .name_skins_3, .main_cards_skins .cards_skins_2 .name_skins_4, .main_cards_skins .cards_skins_2 .name_skins_5, .main_cards_skins .cards_skins_2 .name_skins_8, .main_cards_skins .cards_skins_3 .name_skins_2, .main_cards_skins .cards_skins_3 .name_skins_3, .main_cards_skins .cards_skins_3 .name_skins_4, .main_cards_skins .cards_skins_3 .name_skins_5, .main_cards_skins .cards_skins_3 .name_skins_8, .main_cards_skins .cards_skins_4 .name_skins_2, .main_cards_skins .cards_skins_4 .name_skins_3, .main_cards_skins .cards_skins_4 .name_skins_4, .main_cards_skins .cards_skins_4 .name_skins_5, .main_cards_skins .cards_skins_4 .name_skins_8, .main_cards_skins .cards_skins_5 .name_skins_2, .main_cards_skins .cards_skins_5 .name_skins_3, .main_cards_skins .cards_skins_5 .name_skins_4, .main_cards_skins .cards_skins_5 .name_skins_5, .main_cards_skins .cards_skins_5 .name_skins_8, .main_cards_skins .cards_skins_8 .name_skins_2, .main_cards_skins .cards_skins_8 .name_skins_3, .main_cards_skins .cards_skins_8 .name_skins_4, .main_cards_skins .cards_skins_8 .name_skins_5, .main_cards_skins .cards_skins_8 .name_skins_8 {
+  font-size: 1.3rem;
+}
+.main_cards_skins .cards_skins_2 .price_skins_2, .main_cards_skins .cards_skins_2 .price_skins_3, .main_cards_skins .cards_skins_2 .price_skins_4, .main_cards_skins .cards_skins_2 .price_skins_5, .main_cards_skins .cards_skins_2 .price_skins_8, .main_cards_skins .cards_skins_3 .price_skins_2, .main_cards_skins .cards_skins_3 .price_skins_3, .main_cards_skins .cards_skins_3 .price_skins_4, .main_cards_skins .cards_skins_3 .price_skins_5, .main_cards_skins .cards_skins_3 .price_skins_8, .main_cards_skins .cards_skins_4 .price_skins_2, .main_cards_skins .cards_skins_4 .price_skins_3, .main_cards_skins .cards_skins_4 .price_skins_4, .main_cards_skins .cards_skins_4 .price_skins_5, .main_cards_skins .cards_skins_4 .price_skins_8, .main_cards_skins .cards_skins_5 .price_skins_2, .main_cards_skins .cards_skins_5 .price_skins_3, .main_cards_skins .cards_skins_5 .price_skins_4, .main_cards_skins .cards_skins_5 .price_skins_5, .main_cards_skins .cards_skins_5 .price_skins_8, .main_cards_skins .cards_skins_8 .price_skins_2, .main_cards_skins .cards_skins_8 .price_skins_3, .main_cards_skins .cards_skins_8 .price_skins_4, .main_cards_skins .cards_skins_8 .price_skins_5, .main_cards_skins .cards_skins_8 .price_skins_8 {
+  position: relative;
+  top: 10%;
+  float: left;
+  padding: 10px 25px;
+  border: 5px solid rgb(23, 23, 114);
+  font-family: "Special Gothic Expanded One", sans-serif;
+}
+.main_cards_skins .cards_skins_6, .main_cards_skins .cards_skins_9 {
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  background: #00043b;
+  border-bottom: 0.5rem solid #e6e203;
+}
+.main_cards_skins .M4A4_Voy, .main_cards_skins .GLOVES_Forest {
+  position: relative;
+  left: 13%;
+  width: 70%;
+  height: 50%;
+}
+.main_cards_skins .name_skins_6, .main_cards_skins .name_skins_9 {
+  font-size: 1.3rem;
+}
+.main_cards_skins .price_skins_6, .main_cards_skins .price_skins_9 {
+  position: relative;
+  top: 10%;
+  float: left;
+  padding: 10px 25px;
+  border: 5px solid rgb(23, 23, 114);
+  font-family: "Special Gothic Expanded One", sans-serif;
+}/*# sourceMappingURL=Case_2.css.map */

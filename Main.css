@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    background-image: linear-gradient(90deg, rgb(9, 9, 37), rgb(19, 19, 70), rgb(9, 9, 37)) ;
+    margin: 0;
+    padding: 0;
+    opacity:0.9;
+}
+
+
+.header a {
+    border:0;
+    outline: none;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: inline-block;
+    margin-top: 10px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cap_main {
+    background-color: rgb(8, 8, 49);
+}
+
+.header-right {
+    float: right;
+}
+
+.header a:hover {
+    color: rgb(185, 185, 185);
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.main {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_1 {
+    height: 450px;
+    width: 350px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.card_2 {
+    height: 450px;
+    width: 350px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.card_3 {
+    height: 450px;
+    width: 350px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.card_1:hover {
+    background-color: rgb(0, 0, 41);
+    padding: 40px 20px;
+}
+
+.card_2:hover {
+    background-color: rgb(0, 0, 41);
+    padding: 40px 20px;
+}
+
+.card_3:hover {
+    background-color: rgb(0, 0, 41);
+    padding: 40px 20px;
+}
+
+.case_1 {
+    background-image: url(Img_Cases/vangurd.png);
+    background-size: cover;
+    height: 320px;
+    width: 360px;
+}
+
+.case_2 {
+    background-image: url(Img_Cases/360fx360f.png);
+    background-size: cover;
+    height: 320px;
+    width: 360px;
+}
+
+.case_3 {
+    background-image: url(Img_Cases/2638368444_preview_360fx360f.png);
+    background-size: cover;
+    height: 320px;
+    width: 360px;
+}
+
+.name_case_1, .name_case_2, .name_case_3 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.case_1:hover {
+    transform: scale(1.2);
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.case_2:hover {
+    transform: scale(1.2);
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.case_3:hover {
+    transform: scale(1.2);
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.case_price_1, .case_price_2, .case_price_3 {
+    float: right;
+    padding: 10px 25px;
+    border: 5px solid rgb(23, 23, 114);
+}
